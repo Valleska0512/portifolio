@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <h1>Valleska Hingrid</h1>
+        <p>Dev</p>
+    </header>
+
+    <!-- Menu fixo no canto superior direito -->
+    <div class="menu">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="toggle">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+        </label>
+
+        <!-- Conteúdo do menu -->
+        <div class="menu-content">
+            <a href="#inicio">Início</a>
+            <a href="#sobremim">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </div>
+    <button class="toggle-btn" onclick="toggleMode()">
+    
+   
+        <span class="moon-icon"><i class="fas fa-sun"></i></span>
+            
+           
+        <span class="sun-icon"><i class="fas fa-moon"></i></span>
+          </button>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#inicio" class="links">INÍCIO</a></li>
+            <li><a href="#sobremim" class="links">SOBRE MIM</a></li>
+            <li><a href="#habilidades" class="links">HABILIDADES</a></li>
+            <li><a href="#projetos" class="links">PROJETOS</a></li>
+            <li><a href="#contato" class="links">CONTATO</a></li>
+        </ul>
+        <div class="div1"></div>
+        <div class="div2"></div>
+    </nav>
+
+    <section class="about">
+        <img src="foto.png" alt="Foto de Valleska Hingrid" class="profile-pic">
+        <div id="about-text">
+        </div>
+    </section>
+
+    <section class="sobremim" id="sobremim">
+        <div class="titulo">
+            <div></div>
+
+
+            <h1>Sobre Mim</h1>
+
+
+            <div></div>
+        </div>
+
+        <div class="sobremim-text">
+            <p>Atualmente, sou uma desenvolvedora apaixonada por criar experiências digitais envolventes com <br>
+                CSS e HTML.No momento, estou cursando o segundo ano do Ensino Médio e, além dos estudos, <br>
+                também trabalho na área de desenvolvimento, o que me permite aplicar e expandir <br>
+                meus conhecimentos práticos no dia a dia. Meu objetivo é continuar aprimorando minhas habilidades <br>
+                e explorar novas tecnologias para construir soluções inovadoras e de alta qualidade.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="habilidades" id="habilidades">
+
+        <div class="titulo">
+            <div></div>
+
+            <div>
+                <h1>Habilidades</h1>
+            </div>
+
+            <div></div>
+        </div>
+
+        <div class="container-2">
+
+            <div class="flex">
+
+                <div class="category-title">Administração</div>
+                <div class="section">
+                    <img src="administracao.png" alt="">
+                </div>
+
+                <div class="category-title">Informática</div>
+
+                <div class="section1">
+                    <img src="sql.png" alt="MySQL" class="sql">
+                    <img src="c.png" alt="C#">
+                    <img src="html.png" alt="HTML">
+                    <img src="css.png" alt="CSS">
+                </div>
+
+            </div>
+
+            <div class="content">
+                <div class="highlight">
+                    Atualmente, estou cursando Administração e aprimorando minhas habilidades no pacote Office, usando
+                    Excel, Word, PowerPoint e Outlook. Também tenho experiência em Informática, com conhecimentos em
+                    front-end e back-end, trabalhando com Visual Studio, Visual Code, MySQL, C# e Linux. Busco combinar
+                    minhas habilidades administrativas e técnicas para oferecer soluções eficientes e inovadoras.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="titulo">
+            <div></div>
+
+            <div>
+                <h1>Projetos</h1>
+            </div>
+
+            <div></div>
+        </div>
+
+        <div class="container-2">
+            <div class="box">
+                <img src="vogue.png" alt="Agência Vogue">
+                <p>MODELO DA VOGUE</p>
+            </div>
+            <div class="box">
+                <img src="code-club.png" alt="Code Club">
+                <p>VOLUNTÁRIA CODE CLUB</p>
+            </div>
+            <div class="box">
+                <img src="cisco.png" alt="Certificado Cisco">
+                <p>CERTIFICADO DA CISCO</p>
+            </div>
+            <div class="box">
+                <img src="computadores.png" alt="Manutenção e Configuração">
+                <p>MANUTENÇÃO E CONFIGURAÇÃO DE COMPUTADORES</p>
+            </div>
+            <div class="box">
+                <img src="front-end.png" alt="Manutenção e Configuração">
+                <p>MANUTENÇÃO E CONFIGURAÇÃO DE COMPUTADORES</p>
+            </div>
+            <div class="box">
+                <img src="back-end.png" alt="Manutenção e Configuração">
+                <p>MANUTENÇÃO E CONFIGURAÇÃO DE COMPUTADORES</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="titulo">
+            <div></div>
+
+            <div>
+                <h1>Contato</h1>
+            </div>
+
+            <div></div>
+        </div>
+        <div class="container-3">
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="nome">NOME :</label>
+                        <input type="text" id="nome" name="nome" placeholder="ex: --------- ------------- ---------">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL :</label>
+                        <input type="email" id="email" name="email" placeholder="ex: -----------@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">TELEFONE :</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="ex: (31) - ---- ----">
+                    </div>
+                    <div class="form-group">
+                        <label for="texto">TEXTO :</label>
+                        <textarea id="texto" name="texto"
+                            placeholder="-----------------------------------------"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-4">
+            <div class="container4">
+                <div class="social-media">
+                    <a href="https://www.instagram.com/valleskahgs/?next=%2F" target="_blank">
+                        <img src="insta.png" alt="Instagram">@valleskahgs
+                    </a>
+                    <a href="https://www.linkedin.com/in/valleska-hingrid-goncalves-de-sousa-96a692329/" target="_blank" class="img2-4-container4">
+                        <img src="linkedin.png" alt="LinkedIn">@valleskasousa
+                    </a>
+                    <a href="https://wa.me/5531995061377">
+                        <img src="wats.png" alt="WhatsApp">(31) 9 9506-1377
+                    </a>
+                    <a href="https://github.com/#:~:text=Explorar%20mais%20%E2%86%92-,Valleska0512,-Definir%20status" target="_blank" class="img2-4-container4">
+                        <img src="github.png" alt="GitHub">@valleska0512
+                    </a>
+                </div>
+
+                <div class="header2">
+
+                    <div>
+                        <h3>CONSIDERAÇÕES</h3>
+                        <p>Paulo Susu - Dev</p>
+                    </div>
+                    <img src="cotemig.png" alt="Cotemig">
+
+                </div>
+
+                <div class="form-container2">
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">NOME :</label>
+                            <input type="text" id="nome" name="nome"
+                                placeholder="ex: --------- ------------- ---------">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL :</label>
+                            <input type="email" id="email" name="email" placeholder="ex: -----------@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">TELEFONE :</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="ex: (31) - ---- ----">
+                        </div>
+                        <div class="form-group">
+                            <label for="texto">TEXTO :</label>
+                            <input id="texto" name="texto"
+                                placeholder="------------------------------------"></input>
+                        </div>
+                        <button type="submit" class="submit-btn">enviar</button>
+                    </form>
+                </div>
+            </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
